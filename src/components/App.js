@@ -1,10 +1,14 @@
 import React from 'react';
 import AppBar from './AppBar';
+import LandingPage from './LandingPage';
+import MentorList from './MentorList';
 
 function App() {
   return (
     <div style={styles.container}>
       <AppBar logo="This is logo" links ={links}/>
+      <LandingPage/>
+      <MentorList/>
     </div>
   );
 }

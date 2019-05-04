@@ -9,8 +9,8 @@ const AppBar = ({logo, links}) => {
             </div>
             <div >
                 {
-                    links.map( link => (
-                     <a href={link.url}>{link.text}</a>
+                    links.map( (link, index) => (
+                     <a key={index} href={link.url}>{link.text}</a>
                     ))
                 }
             </div>
