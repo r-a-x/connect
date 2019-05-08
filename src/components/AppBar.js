@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 // links will have text and the link to the other page or component etc
 const AppBar = ({logo, links}) => {
@@ -10,7 +11,7 @@ const AppBar = ({logo, links}) => {
             <div >
                 {
                     links.map( (link, index) => (
-                     <a key={index} href={link.url}>{link.text}</a>
+                     <Link key={index} to={link.url}>{link.text}</Link>
                     ))
                 }
             </div>
@@ -23,7 +24,7 @@ const styles = {
         display: 'flex',
         justifyContent: 'space-between',
         backgroundColor: 'pink',
-        height: '20px',
+        height: '40px',
         margin:'0px',
         padding:'0px'
     },
