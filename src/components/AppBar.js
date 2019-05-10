@@ -6,7 +6,7 @@ const AppBar = ({logo, links}) => {
     return(
         <div style={styles.container}> 
             <div>
-                logo
+                <Link to ="/" >{logo}</Link>
             </div>
             <div >
                 {

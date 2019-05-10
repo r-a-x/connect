@@ -1,7 +1,7 @@
 import React from 'react';
 import AppBar from './AppBar';
 import LandingPage from './LandingPage';
-import MentorList from './MentorList';
+import MentorPage from './MentorPage';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 
@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
       <Switch>
           <Route exact path = "/" component = {LandingPage}/>
-          <Route path = "/mentorlist" component = {MentorList}/>
+          <Route path = "/mentorlist" component = {MentorPage}/>
         </Switch>
       </BrowserRouter>
     </div>

@@ -30,8 +30,9 @@ class MentorList extends Component {
     render(){
         return (
             <div>
-                <MentorCard name ="Shivam Bansal" bio="fdsfldsf;dsf;dslf;f;lkdsf;ldskf;d skf;lkds;a;lk;ldslkjflkdsjfdsflkdsajfjrueoiruoifhdsfkjdsfkdsjfdsalkfjlkdsjflkdsajfHi I am a shopkeeper"/>
-                <div style = {{ display: 'flex', flexDirection:'column' }}>
+                <div 
+                style = {{ display:'grid', gridColumnGap: '15px',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(272px,1fr))' }} >
                  {  this.state.mentors.map(
                         (mentor,index) =>
                             <MentorCard key={index} bio={index} name={"fdf"+String(index)}/>
